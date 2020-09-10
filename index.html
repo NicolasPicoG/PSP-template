@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario PSP</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="js/print.js"></script>
 </head>
 <body>
+<div id="print-area">    
 <h1>PSP PROJECT PLAN SUMARY</h1>
-
 <div class="Datos">
  <fieldset>  
 <strong>Nombre</strong>
@@ -345,9 +345,9 @@
       </fieldset> 
   </form>
 </div>
-
+</div>
 <div class="btn-sumit">
-  <button type="submit" onClick="window.print()">Imprimir</button>
+  <button type="submit" onClick="printDiv('print-area')">Imprimir</button>
 </div>
 </body>
 </html>
